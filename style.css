@@ -110,11 +110,26 @@ color: #8c8c8c
 text-align: justify;}
 
 
-#third{
-height: 100vh;
-color: #8c8c8c
+#divider{
+height: 10vh;
 
+background-color: #2098d1;
 }
+
+#divider h1 {
+  font-size: 25px;
+  padding: 2.5vh;
+}
+
+#divider a {text-decoration: none;
+color: #d7d7c1;
+}
+
+footer{
+  height: 90vh;
+  background-color: black;
+}
+
 
 
 
