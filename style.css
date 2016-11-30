@@ -22,6 +22,22 @@ header {
   background-color: black;
 }
 
+header.clone{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: 0.2s transform cubic-bezier(.3,.73,.3,.74);
+          transition: 0.2s transform cubic-bezier(.3,.73,.3,.74);
+}
+body.down header.clone {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 header h2{
   font-size: 20px;
   display: block;  
@@ -34,17 +50,23 @@ header p {
   padding: 3px 15px;
 }
 
-nav {
+header nav {
   float: right;
 }
 
-nav ul{
+header nav ul{
   list-style: none;
 }
-nav ul li{
+header nav ul li{
   display: block;
   float: left;
   padding: 3px 15px;
+  
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #d7d7c1;
 }
 /*--------------------------------*/
 
@@ -85,7 +107,7 @@ color: #8c8c8c
   position: absolute;
   display: block;
   top: 10vh;
-  left: 30vh;
+  left: 20vh;
   
   -webkit-border-radius: 50%;
      -moz-border-radius: 50%;
@@ -93,12 +115,17 @@ color: #8c8c8c
 
   visibility: hidden;
 }
-#vincenzo-intro{
-  visibility: hidden;
+
+
+.col-4 {
+  width: 33.3%;
+  display: block;
+  float: left;
 }
 
-.col-6 {
 
+
+.col-6 {
   width: 50%;
   display:block;
   position: absolute;
@@ -112,7 +139,6 @@ text-align: justify;}
 
 #divider{
 height: 10vh;
-
 background-color: #2098d1;
 }
 
@@ -128,6 +154,8 @@ color: #d7d7c1;
 footer{
   height: 90vh;
   background-color: black;
+  position: relative;
+  bottom: 0;
 }
 
 
@@ -136,7 +164,7 @@ footer{
 
 
 
-/*Animaation and Effects*/
+/*Animation and Effects*/
 
 
 /*Underline animation for links*/
