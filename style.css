@@ -8,7 +8,51 @@
 
 body{
   font-family: 'Actor', sans-serif !important;
+  font-size: 16px;
   color: #333333;
+}
+
+h1{font-size: 2.5em;}
+h2{font-size: 2em;}
+p{font-size: 1em;}
+
+.container {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: auto;
+  text-align: center;
+}
+/*Grid definitions*/
+
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
 
 
@@ -18,71 +62,57 @@ header {
   position: relative;
   top: 0;
   width: auto;
-  height: 12vh;
+  height: 12%;
   background-color: transparent;
 }
-
-header.clone {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-  -webkit-transition: 0.2s transform cubic-bezier(.3,.73,.3,.74);
-          transition: 0.2s transform cubic-bezier(.3,.73,.3,.74);
-}
-
-body.down header.clone {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
-header h2{
-  font-size: 30px;
-  color: ;
+header h2 {
   display: block;
+  position: relative;
+  top: 2vh;
   padding: 20px 0 0 30px;
   float: left;
 }
 
 
-header nav {
+.menu {
   float: right;
   position: relative;
   top: 5vh;
-
 }
-
-header nav ul{
+.menu ul{
   list-style: none;
 }
-header nav ul li{
+.menu ul li{
   display: block;
   float: left;
   padding: 3px 15px;
   margin-right: 10px
-  
 }
-
-header nav ul li a {
+.menu ul li a {
   text-decoration: none;
   color: #d7d7c1;
   font-weight: bolder;
   text-shadow: 0px 0px 3px #000;
 }
+
+.icon a {display: none;}
+
+@media screen and (max-width: 768px){
+   .menu ul li:not(:last-child) {
+      display:none;
+      width: 100%;
+    }   
+   .icon a {
+    float: right;
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+
+
 /*--------------------------------*/
 
-
-/*Main Body*/
-.container {
-  margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
-  width: auto;
-  text-align: center;
-}
 
 /*Home Page sections*/
 #Page-section{
@@ -92,13 +122,13 @@ header nav ul li a {
 
 #front {
   height: 100vh;
-  background-image: url("assets/Background.jpg");
+ 
 }
 
 #greeting{
-  padding: 30vh;
+  padding: 10%;
   color: white;
-  font-size: 50px;font-weight:900;
+  font-size: 3em;font-weight:900;
   text-shadow: 0px 0px 3px #000;
 
 }
@@ -110,6 +140,7 @@ header nav ul li a {
 
 #intro-text{
   position: relative;
+  z-index: -1;
 }
 
 #vincenzo{
@@ -146,20 +177,16 @@ header nav ul li a {
 }
 
 
-.col-6 {
-  width: 50%;
+/* width: 50%;
   display:block;
   position: absolute;
   top: 25vh;
   right:10vh;
 }
-.col-6 h1 {
-  font-size: 40px;
-}
+
 .col-6 h2 {
-  font-size: 25px;
   text-align: justify;
-}
+} */
 
 
 #divider{
@@ -175,13 +202,13 @@ header nav ul li a {
 }
 
 #divider h1 {
-  font-size: 40px;
+  
   padding-bottom: 20px;
   font-weight: bold;
   text-shadow: 0px 0px 3px #000;
 }
 #divider h2 {
-  font-size: 30px;
+  
   font-weight: bold;
   padding-bottom: 25px;
   text-shadow: 0px 0px 3px #000;
@@ -245,7 +272,7 @@ footer nav ul li a:hover {
 #connect{
   padding-top: 10vh;
   padding-bottom: 5vh;
-  font-size: 45px;
+  
 }
 
 form {  
