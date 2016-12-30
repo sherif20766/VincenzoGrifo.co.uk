@@ -5,7 +5,6 @@ $(document).ready(function(){
 	
 	$("#front").backstretch([
       "assets/Background5.jpg",
-      "assets/Background7.jpg",
       "assets/Background2.jpg",
       "assets/Background4.jpg"
       ], {
