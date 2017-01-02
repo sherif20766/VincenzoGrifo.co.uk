@@ -12,6 +12,17 @@ $(document).ready(function(){
         duration: 5000
     });
 
+	$("#second-page-front").backstretch([
+      "assets/Background5.jpg",
+      "assets/Background2.jpg",
+      "assets/Background4.jpg"
+      ], {
+        fade: 1000,
+        duration: 5000
+    });
+
+
+
  	$(".icon").click(function(){
  		$(".menu ul li").css("display","block");
 
