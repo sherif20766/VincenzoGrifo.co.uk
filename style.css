@@ -335,8 +335,16 @@ footer nav ul li a:hover {
 
 }
 
+/*========================================*/
 
+/*        Hobbies Page                    */
 
+/*========================================*/
+#third-page-front{
+  height: 50vh;
+  width: auto;
+  background-image: url("assets/Background.jpg");
+}
 
 
 
