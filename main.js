@@ -26,6 +26,20 @@ $(document).ready(function(){
         duration: 5000
     });
 
+	$("#forth-page-front").backstretch([
+      "assets/Background5.jpg"
+      ], {
+        fade: 1000,
+        duration: 5000
+    });
+
+	$("#fifth-page-front").backstretch([
+      "assets/Background5.jpg"
+      ], {
+        fade: 1000,
+        duration: 5000
+    });
+
 
 
 

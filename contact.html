@@ -12,47 +12,53 @@
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="animate.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Actor" rel="stylesheet">
       
   </head>
   
   <body>
   
-    <header>
-      <h2>Vincenzo Grifo</h2>
-      
-      <nav>
-        <ul>
-          <li class="underline"><a href="index.html">HOME</a></li>
-          <li class="underline"><a href="profile.html">PROFILE</a></li>
-          <li class="underline"><a href="hobbies.html">HOBBIES</a></li>
-          <li class="underline"><a href="blog.html">BLOG</a></li>
-          <li class="underline"><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </nav>
-    </header>
-    
+    <section class="container" id="fifth-page-front">
+      <header>
+        <span>
+          <h2>Vincenzo Grifo</h2>
+        </span>
+
+        <nav class="menu">
+          <ul>
+            <li class="underline"><a href="index.html">HOME</a></li>
+            <li class="underline"><a href="profile.html">PROFILE</a></li>
+            <li class="underline"><a href="hobbies.html">HOBBIES</a></li>
+            <li class="underline"><a href="blog.html">BLOG</a></li>
+            <li class="underline"><a href="contact.html">CONTACT</a></li>
+            <li class="icon"><a href="javascript:void(0);">☰</a></li>
+          </ul>
+        </nav>
+      </header>
+    </section>
+
 
 
     <section class="container" id="Page-section">
      
-    <h1 id="connect">Let's Connect</h1>
+     <h1 id="connect">Let's Connect</h1>
 
 
-    <form action="/my-handling-form-page" method="post">
-        <div>
-          <input type="text" id="name" name="user_name" placeholder="Full Name" />
+      <form action="/my-handling-form-page" method="post">
+          <div>
+            <input type="text" id="name" name="user_name" placeholder="Full Name" />
+          </div>
+          <div>
+            <input type="email" id="mail" name="user_mail" placeholder="Your Email Address" />
+          </div>
+          <div>
+            <textarea id="msg" name="user_message" placeholder="Your Message"></textarea>
         </div>
-        <div>
-          <input type="email" id="mail" name="user_mail" placeholder="Your Email Address" />
+      
+        <div class="button">
+            <button type="submit">Send your message</button>
         </div>
-        <div>
-          <textarea id="msg" name="user_message" placeholder="Your Message"></textarea>
-      </div>
-    
-      <div class="button">
-          <button type="submit">Send your message</button>
-      </div>
-    </form>
+      </form>
 
     </section>  
 
@@ -75,7 +81,9 @@
   </body>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="jquery.backstretch.js"></script>
   <script type="text/javascript" src="main.js"></script>
+  
   
 
 </html>

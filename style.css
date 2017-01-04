@@ -382,11 +382,35 @@ footer nav ul li a:hover {
     margin-top: 5vh;
   }
 }
+
+
+
+/*========================================*/
+
+/*        Blog Page                       */
+
+/*========================================*/
+#forth-page-front{
+  height: 50vh;
+  width: auto;
+}
+
+
+
+
+
+
 /*==========================================*/
          
 /*            Contact Page                  */
 
 /*==========================================*/
+#fifth-page-front{
+  height: 50vh;
+  width: auto;
+}
+
+
 #connect{
   padding-top: 10vh;
   padding-bottom: 5vh;
@@ -395,6 +419,7 @@ footer nav ul li a:hover {
 
 form {  
   width: auto;
+  
 }
 
 input, textarea {
