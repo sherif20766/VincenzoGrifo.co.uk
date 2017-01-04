@@ -310,7 +310,6 @@ footer nav ul li a:hover {
 #second-page-front{
   height: 50vh;
   width: auto;
-  background-image: url("assets/Background.jpg");
 }
 #Description, #Awards, #CV {
   margin: 0 auto;
@@ -343,14 +342,46 @@ footer nav ul li a:hover {
 #third-page-front{
   height: 50vh;
   width: auto;
-  background-image: url("assets/Background.jpg");
 }
 
+.row {
+  padding: 5vh 5vw 5vh 5vw;
+}
 
+#sport-slick, #travel-slick{left: 10vw}
+#sport-slick img{ 
+  width: 100%;
+  height: auto;
+}
 
+#travel-slick img {  
+  width: 100%;
+  height: auto; 
+}
 
+@media only screen and (max-width: 768px) {
+  #sport-slick. #travel-slick{
+    width:100%;
+  }
 
+  #sport-slick img{ 
+  padding-top: 10vh;
+  width: 80%;
+  height: auto;
+  }
 
+  #travel-slick img {  
+    padding-top: 10vh;
+    width: 80%;
+    height: auto; 
+
+  }
+  
+  #sport-text, #travel-text{
+    text-align: justify;
+    margin-top: 5vh;
+  }
+}
 /*==========================================*/
          
 /*            Contact Page                  */
