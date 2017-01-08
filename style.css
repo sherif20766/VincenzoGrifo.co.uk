@@ -11,6 +11,7 @@ body{
   font-size: 16px;
   line-height: 30px;
   color: #333333;
+  text-align: justify;
 }
 
 h1{font-size: 2.5em;}
@@ -70,9 +71,10 @@ header h2 {
   font-size: 1.5em;
   display: block;
   position: relative;
-  top: 1.5vh;
+  top: 2.5vh;
   padding: 20px 0 0 30px;
   float: left;
+
 }
 
 
@@ -90,24 +92,27 @@ header h2 {
   padding: 3px 15px;
   margin-right: 10px
 }
-.menu ul li a {
+.menu-item {
   text-decoration: none;
   color: #d7d7c1;
+  font-size: 1em;
+  letter-spacing: 5px;
   font-weight: bolder;
   text-shadow: 0px 0px 3px #000;
 }
 
 .icon a {display: none;}
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 880px){
    .menu ul li:not(:last-child) {
-      display:none;
+      display: none;
       width: 100%;
     }   
+
+   .icon {width:100%;}
+
    .icon a {
-    float: right;
     display: inline-block;
-    width: 100%;
   }
 }
 
@@ -129,10 +134,15 @@ header h2 {
 }
 
 #greeting{
-  padding: 15% 10% 10% 10% ;
+  padding: 5% 10% 10% 2% ;
   color: white;
-  font-size: 3em;font-weight:900;
+  font-size: 3em;font-weight:500;
   text-shadow: 0px 0px 3px #000;
+  text-align: left;
+
+}
+#greeting h1{
+  padding-bottom: 3vh ; 
 }
 
 #summary{
@@ -142,7 +152,8 @@ header h2 {
 
 #summary-text{
   position: relative;
-  height: 100%;
+  min-height: 100%;
+  width: 100%;
   font-size: 1.5em;
 }
 
@@ -179,29 +190,35 @@ header h2 {
                 6px 6px 8px 17px #555;
 }
 
-#vincenzo-intro{
- 
-  position: absolute;
-  right: 10vw;
-  top:25vh;
-  width: 40%;
+#vincenzo-intro{  
+  display: inline-block;
+  padding-top: 20vh;
+  margin-left: 20vw;
+  padding-bottom: 5vh;
+  width: 50%;
+  height: auto;
   text-align: justify;
+}
+#vincenzo-intro h1{
+  padding-bottom: 2.5vh;
 }
 
 
 @media screen and (max-width: 768px){
   #vincenzo{
     display: block;
-    width: 40%;
+    width: 50%;
     height: auto;
     position: absolute;
-    left: 30%;
+    left: 25%;
   }
 
   #vincenzo-intro{
     display: block;
     position: static;
     padding-top: 75vh;
+    padding-bottom: 10vh;
+    margin-left: 0;
     width: 100%;
     height: auto;
 
@@ -220,7 +237,7 @@ header h2 {
   #vincenzo-intro{
     display: block;
     position: static;
-    padding-top: 60vh;
+    padding-top: 55vh;
     width: 100%;
     height: auto;
 
@@ -314,10 +331,10 @@ footer nav ul li a:hover {
 #Description, #Awards, #CV {
   margin: 0 auto;
   display: block;
-  margin: 5% 20% 5% 20%;
+  margin: 5% 10% 5% 10%;
   
-  font-size: 20px;
-  line-height: 30px
+  font-size: 25px;
+  line-height: 35px
 }
 
 .title {  
@@ -326,12 +343,30 @@ footer nav ul li a:hover {
   margin-bottom: 1%;
   text-decoration: none;
   color: black;
+  padding-bottom: 2.5vh;
 }
-#CV a{
+#CV button{
   margin: 0 auto;
   display: block;
-  margin: 5% 20% 5% 20%;
+  height: 100px;
+  width: 200px;
+  font-size: 25px;
 
+}
+
+@media screen and (max-width: 480px){
+  #Description, #Awards, #CV {
+  font-size: 25px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+
+
+ #Description .title{
+  margin-top: 10vh;
+  margin-bottom: 2.5vh;
+ }
 }
 
 /*========================================*/
@@ -378,7 +413,7 @@ footer nav ul li a:hover {
   }
   
   #sport-text, #travel-text{
-    text-align: justify;
+    
     margin-top: 5vh;
   }
 }
@@ -408,6 +443,7 @@ footer nav ul li a:hover {
 #fifth-page-front{
   height: 50vh;
   width: auto;
+  background-clip: 
 }
 
 

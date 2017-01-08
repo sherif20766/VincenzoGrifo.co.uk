@@ -2,39 +2,41 @@ $(document).ready(function(){
 	$('body').css('display', 'none');
 	$('body').fadeIn(1200);
 	
+	$('greeting').css('display','none');
+	$('greeting').fadeIn(5000);
 	
-	$("#front").backstretch([
-      "assets/Background5.jpg",
+	$("#front").backstretch([		
       "assets/Background2.jpg",
-      "assets/Background4.jpg"
+      "assets/Background3.jpg",
+      "assets/Background5.jpg"
       ], {
         fade: 1000,
         duration: 5000
     });
 
 	$("#second-page-front").backstretch([
-      "assets/Background5.jpg"
+      "assets/Profile_Background.jpg"
       ], {
         fade: 1000,
         duration: 5000
     });
 
 	$("#third-page-front").backstretch([
-      "assets/Background5.jpg"
+      "assets/Hobbies_Background.jpg"
       ], {
         fade: 1000,
         duration: 5000
     });
 
 	$("#forth-page-front").backstretch([
-      "assets/Background5.jpg"
+      "assets/Background1.jpg"
       ], {
         fade: 1000,
         duration: 5000
     });
 
 	$("#fifth-page-front").backstretch([
-      "assets/Background5.jpg"
+      "assets/Background7.jpg"
       ], {
         fade: 1000,
         duration: 5000
@@ -43,9 +45,8 @@ $(document).ready(function(){
 
 
 
- 	$(".icon").click(function(){
+ 	$(".icon").on("click", function(){
  		$(".menu ul li").css("display","block");
-
  	});
 
 	$(window).scroll(function() {
@@ -70,6 +71,6 @@ $(document).ready(function(){
 	  adaptiveHeight: true,
 	  arrows: false,
 	  cssEase: 'linear'
-	});
+	})
 
 });
