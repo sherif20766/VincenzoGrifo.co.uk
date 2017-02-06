@@ -71,6 +71,6 @@ $(document).ready(function(){
 	  adaptiveHeight: true,
 	  arrows: false,
 	  cssEase: 'linear'
-	})
+	});
 
 });

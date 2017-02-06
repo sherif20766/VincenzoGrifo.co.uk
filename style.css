@@ -332,9 +332,10 @@ footer nav ul li a:hover {
   margin: 0 auto;
   display: block;
   margin: 5% 10% 5% 10%;
-  
+  text-align: left;
   font-size: 25px;
   line-height: 35px
+
 }
 
 .title {  
@@ -356,7 +357,7 @@ footer nav ul li a:hover {
 
 @media screen and (max-width: 480px){
   #Description, #Awards, #CV {
-  font-size: 25px;
+  font-size: 20px;
   line-height: 25px;
   text-align: justify;
 }
@@ -444,6 +445,13 @@ footer nav ul li a:hover {
   height: 50vh;
   width: auto;
   background-clip: 
+}
+
+#Contact-section{
+  min-height: 75vh;
+  width: 100%;
+  color: #8c8c8c;
+  display: block;
 }
 
 

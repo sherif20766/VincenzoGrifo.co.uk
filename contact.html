@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="animate.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <link href="https://fonts.googleapis.com/css?family=Actor" rel="stylesheet">
     
       
@@ -40,25 +42,14 @@
 
 
 
-    <section class="container" id="Page-section">
+    <section class="container" id="Contact-section">
      
-     <h1 id="connect">Let's Connect</h1>
+     <h1 class = "title" id="connect">Let's Connect</h1>
 
-
-      <form action="/my-handling-form-page" method="post">
-          <div>
-            <input type="text" id="name" name="user_name" placeholder="Full Name" />
-          </div>
-          <div>
-            <input type="email" id="mail" name="user_mail" placeholder="Your Email Address" />
-          </div>
-          <div>
-            <textarea id="msg" name="user_message" placeholder="Your Message"></textarea>
-        </div>
-      
-        <div class="button">
-            <button type="submit">Send your message</button>
-        </div>
+      <form method="POST" action="http://formspree.io/sherif20766@hotmail.com">
+        <input type="email" name="email" placeholder="Your email">
+        <textarea name="message" placeholder="Your message"></textarea>
+        <button type="submit">Send</button>
       </form>
 
     </section>  
@@ -78,12 +69,14 @@
     </footer>
 
 
-
-  </body>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="jquery.backstretch.js"></script>
   <script type="text/javascript" src="main.js"></script>
+  <script src="slick/slick.min.js"></script>
+  
+  </body>
+
+
   
   
 
