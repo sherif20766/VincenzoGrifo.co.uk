@@ -221,7 +221,9 @@ header h2 {
     margin-left: 0;
     width: 100%;
     height: auto;
-
+    font-size: 20px;
+    line-height: 25px;
+    text-align: justify;
   }
 }
 
@@ -240,6 +242,9 @@ header h2 {
     padding-top: 55vh;
     width: 100%;
     height: auto;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: justify;
 
   }
 }
@@ -331,12 +336,14 @@ footer nav ul li a:hover {
 #Description, #Awards, #CV {
   margin: 0 auto;
   display: block;
-  margin: 5% 10% 5% 10%;
+  margin: 5% 15% 5% 15%;
   text-align: left;
   font-size: 25px;
-  line-height: 35px
+  line-height: 35px;
+  text-align: justify;
 
 }
+
 
 .title {  
   text-align: center;
@@ -384,7 +391,16 @@ footer nav ul li a:hover {
   padding: 5vh 5vw 5vh 5vw;
 }
 
-#sport-slick, #travel-slick{left: 10vw}
+#sport-text, #travel-text{
+  font-size: 25px;
+  line-height: 35px;
+  color: #8c8c8c;
+}
+
+#sport-slick, #travel-slick{
+  top: 8vh;
+  left: 10vw;
+}
 #sport-slick img{ 
   width: 100%;
   height: auto;
@@ -396,8 +412,18 @@ footer nav ul li a:hover {
 }
 
 @media only screen and (max-width: 768px) {
+  #third-page-front{
+  height: 50vh;
+  width: 100vw;
+}
+
   #sport-slick. #travel-slick{
     width:100%;
+    text-align: justify;
+  }
+  #sport-slick, #travel-slick{
+    top: 0vh;
+
   }
 
   #sport-slick img{ 
@@ -414,8 +440,9 @@ footer nav ul li a:hover {
   }
   
   #sport-text, #travel-text{
-    
     margin-top: 5vh;
+    font-size: 20px;
+    line-height: 25px;
   }
 }
 
@@ -429,6 +456,17 @@ footer nav ul li a:hover {
 #forth-page-front{
   height: 50vh;
   width: auto;
+}
+
+#Blog-section{
+  height: 60vh;
+}
+
+#coming-soon{
+  position: relative;
+  top: 20vh;
+  font-size: 50px;
+
 }
 
 
